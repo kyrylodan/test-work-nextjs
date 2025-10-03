@@ -1,26 +1,185 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Story+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&display=swap');
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.Movies-Container {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.movies-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* завжди 3 колонки */
+        gap: 50px;
+        margin-top: 20px;
+        height: 590px;
+        width: 1000px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.movie-card {
+        background: #fff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.2s ease;
+
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.movie-card:hover {
+        transform: translateY(-5px);
 }
+
+.movie-poster {
+        width: 100%;
+        height: 380px;
+        object-fit: cover;
+        background: #eee;
+
+}
+
+.movie-poster.placeholder {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #666;
+}
+
+.movie-info {
+        padding: 15px;
+}
+
+.movie-info h3 {
+        margin: 0 0 10px;
+        font-size: 18px;
+}
+
+.movie-info p {
+        margin: 5px 0;
+        font-size: 14px;
+}
+
+.overview {
+        margin-top: 10px;
+        font-size: 13px;
+        color: #444;
+        line-height: 1.4;
+}
+
+.pagination {
+        margin: 10px 0 40px 0;
+
+}
+.movies-genres{
+        display: flex;
+        justify-content: center;
+}
+button{
+        position: relative;
+        background: linear-gradient(135deg, #ff6a00, #ee0979);
+        color: #fff;
+        border: none;
+        padding: 12px 24px;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 14px;
+        cursor: pointer;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        box-shadow: 0 6px 20px rgba(238, 9, 121, 0.4);
+        margin-left: 70px;
+        margin-top: 50px;
+}
+button:hover{
+        transform: translateY(-5px);
+}
+.movies{
+  display: flex;
+        justify-content: center;
+}
+.SearchMovies{
+        margin: 30px 0 30px 190px;
+        width: 750px;
+        height: 60px;
+        border-radius: 20px;
+        background-color: lightgrey;
+        color: white;
+        border: none;
+        padding-left: 10px;
+
+
+}
+
+.SearchMovies::placeholder{
+        color: black;
+}
+.movie-detail-card {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        padding: 20px;
+        max-width: 800px;
+}
+.movie-detail-poster {
+        width: 300px;
+        height: auto;
+        border-radius: 12px;
+}
+.movie-detail-info {
+        flex: 1;
+}
+.GenresName{
+        display: flex;
+        justify-content: center;
+
+}
+        .TheEndPage{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 100px;
+                gap: 70px;
+        }
+
+.TheEndPage a{
+        text-decoration: none;
+        color: black;
+
+
+}
+.TheEndPage p{
+        font-family: 'Story Script', cursive;
+        font-size: 30px;
+        color: black;
+}
+
+.TheEnd{
+        display: flex;
+        margin-top: 100px;
+        gap: 70px;
+        margin-left: 120px;
+        margin-bottom: 50px;
+}
+
+.TheEnd a{
+        text-decoration: none;
+        color: #666;
+}
+svg{
+        width: 100px;
+        height: 100px;
+}
+header{
+        display: flex;
+}
+.GenresContainer{
+ margin: 50px 70px;
+
+}
+
