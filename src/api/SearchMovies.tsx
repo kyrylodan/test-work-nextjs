@@ -1,4 +1,4 @@
-import type { IMovie } from "../models/IMovie";
+import type { IMovie } from "@/models/IMovie";
 
 export async function searchMovies(query: string, page = 1): Promise<{ movies: IMovie[], totalPages: number }> {
     try {

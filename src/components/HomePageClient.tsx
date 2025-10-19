@@ -2,11 +2,11 @@
 
     import { useState, useEffect } from "react";
     import { useRouter } from "next/navigation";
-    import { getMovies } from "@/app/api/getMovie";
-    import { getGenres } from "@/app/api/getGener";
-    import { searchMovies } from "@/app/api/SearchMovies";
-    import { IMovie } from "@/app/models/IMovie";
-    import { IGenre } from "@/app/models/IGenre";
+    import { getMovies } from "@/api/getMovie";
+    import { getGenres } from "@/api/getGener";
+    import { searchMovies } from "@/api/SearchMovies";
+    import { IMovie } from "@/models/IMovie";
+    import { IGenre } from "@/models/IGenre";
     import "@/app/globals.css"
     import Link from "next/link";
     export default function HomePage() {

@@ -1,4 +1,4 @@
-import {IGenre} from "@/app/models/IGenre";
+import {IGenre} from "@/models/IGenre";
 
 export interface IMovieDetail {
     id: number;

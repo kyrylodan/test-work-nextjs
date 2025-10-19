@@ -2,8 +2,8 @@
     import { useEffect, useState } from "react";
     import { useParams, useRouter } from "next/navigation";
     import '@/app/globals.css';
-    import {getMovieById} from "@/app/models/getMovieById";
-    import {IMovieDetail} from "@/app/models/IMovieDetails";
+    import {getMovieById} from "@/models/getMovieById";
+    import {IMovieDetail} from "@/models/IMovieDetails";
     import "@/app/globals.css"
     export default function MovieDetailPage() {
         const { id } = useParams();

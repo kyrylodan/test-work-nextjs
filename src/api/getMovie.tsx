@@ -1,4 +1,4 @@
-import type { IMovie } from "../models/IMovie";
+import type { IMovie } from "@/models/IMovie";
 
 export const getMovies = async (page: number = 1): Promise<{ movies: IMovie[], totalPages: number }> => {
     const res = await fetch(
